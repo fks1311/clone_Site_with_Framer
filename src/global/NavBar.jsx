@@ -6,8 +6,8 @@ export default function NavBar() {
   const navigate = useNavigate();
 
   return (
-    <Container className="nav">
-      <NavContainer>
+    <Container>
+      <NavContainer className="nav">
         <Title onClick={() => navigate("/")}>with Framer-motion</Title>
         <Item>
           <Items onClick={() => navigate("/scroll-overlay")}>
