@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import NavBar from "components/nav/NavBar";
-import Main from "pages/Main";
-import ScrollOverlay from "pages/ScrollOverlay";
+import NavBar from "global/NavBar";
+import Home from "global/Home";
+import ScrollOverlay from "products/scroll-overlay/ScrollOverlay";
 
 const router = createBrowserRouter([
   {
@@ -11,7 +11,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Main />,
+        element: <Home />,
       },
       {
         path: "/scroll-overlay",

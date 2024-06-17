@@ -32,6 +32,7 @@ const NavContainer = styled.div`
   color: #f7f9f2;
   font-size: 20px;
   font-weight: 500;
+  cursor: pointer;
 `;
 const Title = styled(motion.div)`
   padding: 1rem;

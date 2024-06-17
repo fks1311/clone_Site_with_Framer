@@ -1,8 +1,8 @@
 import { styled } from "styled-components";
 
-export default function Main() {
+export default function Home() {
   return (
-    <PageContainer className="main">
+    <PageContainer className="Home">
       Clone Site with Framer-motion
     </PageContainer>
   );
