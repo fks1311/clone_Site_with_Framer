@@ -5,12 +5,13 @@ export default function HideOverlay() {
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], [1700, 2000]);
 
-  return <Container style={{ y }}>Hide Overlay</Container>;
+  return <Container style={{ y }}>Welcome to the show!</Container>;
 }
 
 const Container = styled(motion.div)`
   position: absolute;
   display: flex;
-  font-size: 48px;
+  margin-left: 3rem;
+  font-size: 55px;
   color: #f6fab9;
 `;
