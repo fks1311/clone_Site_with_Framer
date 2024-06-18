@@ -7,13 +7,11 @@ import Img2 from "./components/Img2";
 import Img3 from "./components/Img3";
 
 export default function ScrollOverlay() {
-  const { scrollYProgress } = useScroll();
-
   return (
     <PageContainer className="scroll-overlay">
       <ScrollOverlayMain>Scroll Overlay</ScrollOverlayMain>
-      <ScrollWrapper className="scroll-wrapper">
-        <PositionWrapper className="position-wrapper">
+      <ScrollWrapper>
+        <PositionWrapper>
           <Img1 />
           <Img2 />
           <Img3 />
