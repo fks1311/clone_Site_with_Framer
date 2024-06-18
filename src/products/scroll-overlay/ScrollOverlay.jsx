@@ -1,4 +1,4 @@
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { styled } from "styled-components";
 
 import ScrollOverlayMain from "./components/ScrollOveralyMain";
@@ -21,7 +21,9 @@ export default function ScrollOverlay() {
   );
 }
 
-const PageContainer = styled.div``;
+const PageContainer = styled.div`
+  background-color: black;
+`;
 
 // Wrapper Container for `sticky` position
 const ScrollWrapper = styled.div`

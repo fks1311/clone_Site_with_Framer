@@ -10,5 +10,4 @@ const Container = styled.div`
   align-items: center;
   height: ${window.innerHeight}px;
   color: #f6fab9;
-  background-color: black;
 `;
