@@ -25,7 +25,7 @@ const PageContainer = styled.div``;
 
 // Wrapper Container for `sticky` position
 const ScrollWrapper = styled.div`
-  height: 200vh;
+  height: 300vh;
 `;
 
 // position Container Wrapper
