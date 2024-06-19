@@ -13,6 +13,7 @@ export default function NavBar() {
           <Items onClick={() => navigate("/scroll-overlay")}>
             Scroll-Overlay
           </Items>
+          <Items onClick={() => navigate("/mubasic")}>Mubasic</Items>
         </Item>
       </NavContainer>
       <Outlet />
@@ -39,6 +40,8 @@ const Title = styled(motion.div)`
 `;
 
 const Item = styled.div`
+  display: flex;
+  gap: 1rem;
   padding: 1rem;
 `;
 const Items = styled(motion.div)``;
