@@ -4,13 +4,13 @@ import MubasicBar from "./MubasicBar";
 
 export default function MubasicMain() {
   const arr = [
-    { text: "M", property: {} },
-    { text: "U", property: {} },
-    { text: "B", property: {} },
-    { text: "A", property: {} },
-    { text: "S", property: {} },
-    { text: "I", property: {} },
-    { text: "C", property: {} },
+    { text: "M", property: { bgColor: "#A7E6FF" } },
+    { text: "U", property: { bgColor: "#1a2130" } },
+    { text: "B", property: { bgColor: "#FFC96F" } },
+    { text: "A", property: { bgColor: "#F8F4E1" } },
+    { text: "S", property: { bgColor: "#FF7F3E" } },
+    { text: "I", property: { bgColor: "#1a2130" } },
+    { text: "C", property: { bgColor: "#FED9ED" } },
   ];
   const variants = {
     start: { opacity: 0, y: "50%" },

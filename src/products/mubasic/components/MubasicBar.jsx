@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { styled } from "styled-components";
 
 const MubasicBar = forwardRef((props, ref) => {
+  const { bgColor } = ref;
   const variants = {
     start: { opacity: 0, x: "50%" },
     end: {
@@ -13,7 +14,7 @@ const MubasicBar = forwardRef((props, ref) => {
   };
 
   return (
-    <BarContainer variants={variants}>
+    <BarContainer variants={variants} $bgColor={bgColor}>
       <TextBox>{props.children}</TextBox>
     </BarContainer>
   );
@@ -23,7 +24,7 @@ const BarContainer = styled(motion.div)`
   width: 80%;
   padding: 2.5rem;
   border-radius: 10px 0px 0px 10px;
-  background-color: #91ddcf;
+  background-color: ${({ $bgColor }) => $bgColor};
 `;
 const TextBox = styled.div``;
 
