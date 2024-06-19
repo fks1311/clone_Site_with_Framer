@@ -1,12 +1,15 @@
+import { forwardRef } from "react";
 import { motion } from "framer-motion";
 import { styled } from "styled-components";
 
-const { forwardRef } = require("react");
-
 const MubasicBar = forwardRef((props, ref) => {
   const variants = {
-    start: { opaciy: 0 },
-    end: { opaciy: 1 },
+    start: { opacity: 0, x: "50%" },
+    end: {
+      opacity: 1,
+      x: "0%",
+      transition: { duration: 0.5 },
+    },
   };
 
   return (

@@ -21,14 +21,17 @@ export default function MubasicMain() {
     },
   };
   const rightVariants = {
-    start: { opaciy: 0 },
-    end: { opaciy: 0, transition: { staggerChildren: 1 } },
+    start: { opacity: 0 },
+    end: {
+      opacity: 1,
+      transition: { staggerChildren: 0.3 },
+    },
   };
 
   return (
     <ViewContainer variants={variants} initial="start" animate="end">
       <LeftView>left</LeftView>
-      <RightView variants={rightVariants}>
+      <RightView className="right" variants={rightVariants}>
         {arr.map((data, idx) => (
           <MubasicBar key={idx} ref={data.property}>
             {data.text}
