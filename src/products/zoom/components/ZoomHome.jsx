@@ -33,3 +33,8 @@ const Card = styled.div`
   border: 1px solid black;
   background-color: ${({ center }) => center === 7 && `#E0A75E`};
 `;
+
+/**
+ * ViewContainer : scrollY 위한 높이
+ * Container : { width: 100% } 설정해야 중앙을 기준으로 zoom out
+ */
