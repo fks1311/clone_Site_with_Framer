@@ -24,7 +24,7 @@ export default function ScrollOverlay() {
 }
 
 const PageContainer = styled.div`
-  background-color: black;
+  background-color: #3dc2ec;
 `;
 
 // Height Wrapper Container for `sticky` position

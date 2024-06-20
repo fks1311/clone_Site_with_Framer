@@ -1,7 +1,8 @@
 import DefaultImgViewContainer from "./DefaultImgViewContainer";
+import Img from "../assets/palm-trees.jpg";
 
 export default function Img2() {
-  const property = { bgColor: "#5A639C", topY: 1200 };
+  const property = { topY: 1200, Img };
 
-  return <DefaultImgViewContainer ref={property}>Img2</DefaultImgViewContainer>;
+  return <DefaultImgViewContainer ref={property} />;
 }

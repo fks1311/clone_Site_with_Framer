@@ -1,7 +1,8 @@
 import DefaultImgViewContainer from "./DefaultImgViewContainer";
+import Img from "../assets/beach.jpg";
 
 export default function Img1() {
-  const property = { bgColor: "#604CC3", topY: 800 };
+  const property = { topY: 800, Img };
 
-  return <DefaultImgViewContainer ref={property}>Img1</DefaultImgViewContainer>;
+  return <DefaultImgViewContainer ref={property} />;
 }
