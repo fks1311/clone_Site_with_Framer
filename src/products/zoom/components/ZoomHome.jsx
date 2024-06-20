@@ -36,5 +36,5 @@ const Card = styled.div`
 
 /**
  * ViewContainer : scrollY 위한 높이
- * Container : { width: 100% } 설정해야 중앙을 기준으로 zoom out
+ * Container : { position:fixed; width: 100%; } 설정해야 중앙을 기준으로 zoom out
  */
