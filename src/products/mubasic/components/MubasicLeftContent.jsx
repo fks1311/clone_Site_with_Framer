@@ -1,9 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 
 export default function MubasicLeftContent() {
+  const navigate = useNavigate();
+
   return (
     <ViewContainer>
-      <Logo>Mubasic</Logo>
+      <Logo onClick={() => navigate("/")}>Mubasic</Logo>
       <Content>
         The <strong>#1</strong>
         <br />
@@ -28,6 +31,7 @@ const ViewContainer = styled.div`
 const Logo = styled.div`
   font-size: 48px;
   font-weight: bold;
+  cursor: pointer;
 `;
 const Content = styled.div`
   margin-top: 10rem;
