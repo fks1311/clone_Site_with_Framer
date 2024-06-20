@@ -4,6 +4,7 @@ import NavBar from "global/NavBar";
 import Home from "global/Home";
 import ScrollOverlay from "products/scroll-overlay/ScrollOverlay";
 import Mubasic from "products/mubasic/Mubasic";
+import Zoom from "products/zoom/Zoom";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/mubasic",
         element: <Mubasic />,
+      },
+      {
+        path: "/zoom",
+        element: <Zoom />,
       },
     ],
   },

@@ -14,6 +14,7 @@ export default function NavBar() {
             Scroll-Overlay
           </Items>
           <Items onClick={() => navigate("/mubasic")}>Mubasic</Items>
+          <Items onClick={() => navigate("/zoom")}>Zoom</Items>
         </Item>
       </NavContainer>
       <Outlet />
