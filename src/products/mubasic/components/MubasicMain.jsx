@@ -1,17 +1,40 @@
 import { motion } from "framer-motion";
 import { styled } from "styled-components";
-import MubasicBar from "./MubasicBar";
+import MubasicRightBar from "./MubasicRightBar";
+import MubasicLeftContent from "./MubasicLeftContent";
 
 export default function MubasicMain() {
   const arr = [
-    { text: "M", property: { bgColor: "#A7E6FF" } },
-    { text: "U", property: { bgColor: "#1a2130" } },
-    { text: "B", property: { bgColor: "#FFC96F" } },
-    { text: "A", property: { bgColor: "#F8F4E1" } },
-    { text: "S", property: { bgColor: "#FF7F3E" } },
-    { text: "I", property: { bgColor: "#1a2130" } },
-    { text: "C", property: { bgColor: "#FED9ED" } },
+    {
+      text: "M",
+      property: { bgColor: "#A7E6FF", width: "80", top: "10", z: "0" },
+    },
+    {
+      text: "U",
+      property: { bgColor: "#1a2130", width: "60", top: "14", z: "1" },
+    },
+    {
+      text: "B",
+      property: { bgColor: "#FFC96F", width: "80", top: "18", z: "0" },
+    },
+    {
+      text: "A",
+      property: { bgColor: "#F8F4E1", width: "80", top: "26", z: "0" },
+    },
+    {
+      text: "S",
+      property: { bgColor: "#FF7F3E", width: "80", top: "34", z: "0" },
+    },
+    {
+      text: "I",
+      property: { bgColor: "#1a2130", width: "60", top: "38", z: "1" },
+    },
+    {
+      text: "C",
+      property: { bgColor: "#FED9ED", width: "80", top: "42", z: "0" },
+    },
   ];
+
   const variants = {
     start: { opacity: 0, y: "50%" },
     end: {
@@ -30,12 +53,14 @@ export default function MubasicMain() {
 
   return (
     <ViewContainer variants={variants} initial="start" animate="end">
-      <LeftView>left</LeftView>
+      <LeftView>
+        <MubasicLeftContent />
+      </LeftView>
       <RightView className="right" variants={rightVariants}>
         {arr.map((data, idx) => (
-          <MubasicBar key={idx} ref={data.property}>
+          <MubasicRightBar key={idx} ref={data.property}>
             {data.text}
-          </MubasicBar>
+          </MubasicRightBar>
         ))}
       </RightView>
     </ViewContainer>
@@ -49,9 +74,10 @@ const ViewContainer = styled(motion.div)`
 const LeftView = styled.div`
   width: 50%;
   height: ${window.innerHeight}px;
-  background-color: #ff7f3e;
+  background-color: #ffc96f;
 `;
 const RightView = styled(motion.div)`
+  position: relative;
   width: 50%;
   height: ${window.innerHeight}px;
   display: flex;
