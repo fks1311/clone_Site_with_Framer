@@ -11,4 +11,6 @@ export default function Mubasic() {
   );
 }
 
-const PageContainer = styled.div``;
+const PageContainer = styled.div`
+  overflow: hidden;
+`;

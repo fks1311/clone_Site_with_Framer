@@ -16,6 +16,9 @@ const MubasicRightBar = forwardRef((props, ref) => {
   return (
     <BarContainer
       variants={variants}
+      whileHover={{
+        x: "30px",
+      }}
       $bgColor={bgColor}
       width={width}
       top={top}
@@ -34,6 +37,10 @@ const BarContainer = styled(motion.div)`
   z-index: ${({ z }) => z};
   border-radius: 10px 0px 0px 10px;
   background-color: ${({ $bgColor }) => $bgColor};
+  cursor: pointer;
+  &:hover {
+    transform: translateX(42px);
+  }
 `;
 const TextBox = styled.div`
   width: 50px;
