@@ -13,7 +13,6 @@ const DefaultImgViewContainer = forwardRef((props, ref) => {
   const [y, setY] = useState();
   const top = useTransform(scrollYProgress, [0, 0.5], [topY, 0]);
   const x = useTransform(scrollYProgress, [0.5, 1], [0, 1270]);
-  console.log(Img);
 
   // y Scroll 값 감지
   useMotionValueEvent(scrollY, "change", (latest) => {
