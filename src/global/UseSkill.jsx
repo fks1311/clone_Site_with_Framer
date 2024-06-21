@@ -2,12 +2,15 @@ import { forwardRef } from "react";
 import { styled } from "styled-components";
 
 const UseSkill = forwardRef((props, ref) => {
-  return <ViewContainer></ViewContainer>;
+  return <ViewContainer>{props.children}</ViewContainer>;
 });
 
 const ViewContainer = styled.div`
   display: flex;
-  height: ${window.innerHeight / 3}px;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  height: ${window.innerHeight / 1.5}px;
   background-color: #eeeeee;
 `;
 

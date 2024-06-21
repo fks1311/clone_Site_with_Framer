@@ -1,9 +1,11 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { styled } from "styled-components";
+import SkewInnerMain from "./SkewInnerMain";
 
 export default function SkewMain() {
   const { scrollYProgress } = useScroll();
   const skew = useTransform(scrollYProgress, [0, 1], ["-30deg", "0deg"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["45deg", "0deg"]);
 
   const LineTop = {
     width: true,
@@ -34,6 +36,7 @@ export default function SkewMain() {
       <LineContainer $linePosition={LineRight} />
       <LineContainer $linePosition={LineBottom} />
       <LineContainer $linePosition={LineLeft} />
+      <SkewInnerMain />
     </ViewContainer>
   );
 }
