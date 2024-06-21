@@ -5,6 +5,7 @@ import Home from "global/Home";
 import ScrollOverlay from "products/scroll-overlay/ScrollOverlay";
 import Mubasic from "products/mubasic/Mubasic";
 import Zoom from "products/zoom/Zoom";
+import SkewScroll from "products/skew-scroll/SkewScroll";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/zoom",
         element: <Zoom />,
+      },
+      {
+        path: "/skew",
+        element: <SkewScroll />,
       },
     ],
   },

@@ -15,6 +15,7 @@ export default function NavBar() {
           </Items>
           <Items onClick={() => navigate("/mubasic")}>Mubasic</Items>
           <Items onClick={() => navigate("/zoom")}>Zoom</Items>
+          <Items onClick={() => navigate("/skew")}>Skew</Items>
         </Item>
       </NavContainer>
       <Outlet />
