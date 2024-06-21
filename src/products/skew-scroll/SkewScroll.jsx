@@ -1,3 +1,14 @@
+import { styled } from "styled-components";
+import SkewHome from "./components/SkewHome";
+import SkewMain from "./components/SkewMain";
+
 export default function SkewScroll() {
-  return <div>sfafasfd</div>;
+  return (
+    <PageContainer>
+      <SkewHome />
+      <SkewMain />
+    </PageContainer>
+  );
 }
+
+const PageContainer = styled.div``;
